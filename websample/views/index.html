@@ -1,0 +1,26 @@
+@{title('Something awesome')}
+
+
+@{model.files.length}
+<hr />
+@{foreach file in model.files}
+<div class="elem-div">@{index}. @{file.name}
+	@{json(file,null,true)}</div>
+
+@{end}
+
+<br />
+<p class="center">
+	The node.js framework for all web developers with everything what you need.<br />
+	<b>Create something awesome.</b>
+</p>
+<br />
+<br />
+<div class="center"><a href="http://docs.totaljs.com" class="linkbutton">DOCUMENTATION</a></div>
+<style>
+	.elem-div{
+		border-bottom: 3px solid green;
+		margin-bottom: 2em;
+		white-space: pre;
+	}
+</style>
